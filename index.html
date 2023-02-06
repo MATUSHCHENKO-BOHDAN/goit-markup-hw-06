@@ -484,15 +484,45 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-form">
+          <h2 class="subscribe-item">
+            Subscribe
+          </h2>
+          <form action="#" class="form-sub">
+            <input type="email" class="input-sub" name="user-email" placeholder="E-mail" required > 
+
+
+            <button type="submit" class="button-sub">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden*" data-modal>
       <div class="modal">
         <button type="button" class="button-close" data-modal-close>
           <svg class="svg-close">
             <use href="./images/svg-sprite/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+        <form action="#" class="modal-form">
+        <label>
+          <span class="input-text">Name</span>
+        <input type="text" class="modal-input"  name="user-name" placeholder="" required >
+        </label>
+        <label>
+          <span class="input-text">Phone</span> 
+        <input type="tel" class="modal-input"  name="user-tel" placeholder="" required >
+        </label>
+        <label>
+          <span class="input-text">Email</span>
+        <input type="email" class="modal-input"  name="user-email" placeholder="" required >
+        </label>
+        <label>
+          <textarea name="user-text" id="user-text" class="user-text" placeholder="comment"></textarea>
+        </label>
+        <button type="submit" class="button-send">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
